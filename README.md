@@ -1,3 +1,13 @@
+Startrek Quotes with CockroachDB
+================================
+### Homepage
+#### Quotes are queried from CockroachDB and displayed every few seconds.  
+<img src="https://i.imgur.com/TiGjKH8.png"></img>
+
+### Project on Glitch
+#### Project can be found on Glitch at <href = "https://checker-aries.glitch.me">
+<img src="https://i.imgur.com/IEd1qdV.png"></img>
+
 Welcome to Glitch
 =================
 
