@@ -5,7 +5,7 @@ Startrek Quotes with CockroachDB
 <img src="https://i.imgur.com/TiGjKH8.png"></img>
 
 ### Project on Glitch
-#### Project can be found on Glitch at <href = "https://checker-aries.glitch.me">
+#### Project can be found on Glitch at <a href = "https://checker-aries.glitch.me">https://checker-aries.glitch.me/</a>
 <img src="https://i.imgur.com/IEd1qdV.png"></img>
 
 Welcome to Glitch
