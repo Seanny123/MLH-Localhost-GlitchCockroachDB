@@ -8,6 +8,10 @@ Startrek Quotes with CockroachDB
 #### Project can be found on Glitch at <a href = "https://checker-aries.glitch.me">https://checker-aries.glitch.me/</a>
 <img src="https://i.imgur.com/IEd1qdV.png"></img>
 
+### Troubleshooting 'BRB! Connecting to CockroachDB' 
+#### This happens occassionally when the project has been running for a while. It may go to sleep. Simply reload the page and wait a few minutes for the project to wake up and restart the DB process. 
+*** If you really want, you may also go into the Glitch Console and type 'sh cockroach.sh'. Hit <enter> to execute the DB process manually. I suggest this as a last resort though. 
+
 Welcome to Glitch
 =================
 
