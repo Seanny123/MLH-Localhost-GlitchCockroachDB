@@ -10,8 +10,19 @@ Startrek Quotes with CockroachDB
 
 ### Troubleshooting 'BRB! Connecting to CockroachDB' 
 #### This happens occassionally when the project has been running for a while. It may go to sleep. Simply reload the page and wait a few minutes while the project wakes up and restarts the DB process. 
-*** If you really want, you may also go into the Glitch Console and type 'sh cockroach.sh'. Hit <enter> to execute the DB process manually. I suggest this as a last resort though. 
+If the app is really unresponsive, you may also go into the Glitch Console and type 'sh cockroach.sh' to run the cockroachDB process manually. Hit <enter> to execute the DB process. You should see a bunch of output on the Glitch console.
 
+#### If the app is still not responding and the following error appears 'EADDRINUSE :::3000' in the Glitch Log, then you have no choice but to kill the server.js process in the Glitch Console.
+<img src="https://i.imgur.com/nzQsauv.png" /></a>
+
+#### To solve the 'EADDRINUSE :::3000' error...
+* Go to the Glitch Console
+* Type *'ps -ax'* to see a list of all running processes.
+* Find the process *'node server.js'* and note the PID.
+* Finally, kill that process by running *'kill [PID]'* 
+<img src="https://i.imgur.com/0u8U6qS.png" title="Kill process on Glitch" /></a>
+  
+---
 Welcome to Glitch
 =================
 
