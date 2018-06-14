@@ -58,22 +58,14 @@ cockroach start --insecure \
 # --background
 
 
-# Create a user
-cockroach user set maxroach --insecure
+# Create a user (optional for this exercise)
+# cockroach user set maxroach --insecure
 
 # Create DB and priviledges
 cockroach gen example-data startrek | cockroach sql --insecure
 
 # Check on the nodes
 cockroach node ls --insecure
-
-# Execute the example scripts:
-node ~/proxy.js
-node ~/server.js
-#node ~/db.js
-#node ~/js/quote.js
-
-
 
 # Glitch will run this script in a loop, 
 # so sleep for a bit to stablize the refresh rate of the site.
