@@ -22,4 +22,4 @@ If the app is really unresponsive, you may also go into the Glitch Console and t
 * Finally, kill that process by running *'kill [PID]'* 
 <img src="https://i.imgur.com/0u8U6qS.png" title="Kill process on Glitch" /></a>
   
-#### Don't worry about restarting the nodoe server.js as Glitch will do this automatically. You may return to your project on Glitch IDE and check the log to ensure you have no issues. 
+#### Don't worry about restarting the node server.js as Glitch will do this automatically. You may return to your project on Glitch IDE and check the log to ensure you have no issues.
