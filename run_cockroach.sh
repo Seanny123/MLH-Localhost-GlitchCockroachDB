@@ -1,6 +1,10 @@
 ### This file handles the cockroachdb provisioning and configuration.
 ### We'll rerun it continuously, so try to keep its items idempotent and speedy-enough.
+
+
 sh ~/install_cockroachdb.sh
+
+# setup an alias for easy command execution
 alias cockroach="~/.data/cockroach"
 
 # remove the preexisting environment so that we run fresh.
