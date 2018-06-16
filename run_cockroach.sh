@@ -1,10 +1,7 @@
 ### This file handles the cockroachdb provisioning and configuration.
 ### We'll rerun it continuously, so try to keep its items idempotent and speedy-enough.
-
-# work out of the .data folder so that remixes start fresh.
-cd ~/.data
-
-sh ./install_cockroachdb.sh
+sh ~/install_cockroachdb.sh
+alias cockroach="~/.data/cockroach"
 
 # remove the preexisting environment so that we run fresh.
 # (this deletes all the DB data, so we can repeat our assorted creation scripts.)
