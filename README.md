@@ -32,3 +32,7 @@ You have no choice but to kill the server.js process in the Glitch Console.
 ![kill]("https://i.imgur.com/0u8U6qS.png")
   
 Don't worry about restarting the node server.js as Glitch will do this automatically. You may return to your project on Glitch IDE and check the log to ensure you have no issues.
+
+### Running out of space
+
+This only occured once during testing, but sometimes CockroachDB can run out of space on Glitch. In this case, remove the files `cockroach-data`, `mlh-node1` and `mlh-node2`. Then restart and refill the databases.

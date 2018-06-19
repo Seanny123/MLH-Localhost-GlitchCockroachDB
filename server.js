@@ -1,14 +1,14 @@
 // server.js
 // where your node app starts
 
-// init project
+// load libraries
 var express = require('express');
 var db = require('./db');
 var child_process = require('child_process')
 
-var app = express();
-
+// Use Express to serve files from the /public directory
 // http://expressjs.com/en/starter/static-files.html
+var app = express();
 app.use(express.static('public'));
 
 // http://expressjs.com/en/starter/basic-routing.html
@@ -28,10 +28,11 @@ app.get("/quote", function (req, res) {
     })
 });
 
-// listen for requests :)
+// listen for requests
 var listener = app.listen(process.env.PORT, function () {
    console.log('Your app is listening on port ' + listener.address().port);
 });
 
 // launch the cockroach DB script
-child_process.exec("sh run_cockroach.sh")
+// commented out until deployment
+//child_process.exec("sh run_cockroach.sh")
