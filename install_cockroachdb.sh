@@ -10,15 +10,12 @@ if [ ! -f ~/.data/cockroach ]; then
     mv ./cockroach-latest.linux-amd64/cockroach .
     rm cockroach-latest.linux-amd64.tgz
     rm -rf ./cockroach-latest.linux-amd64
-    rm -r .wget-hsts
+    rm -rf .wget-hsts
 
     # Instead of following instrutions and copying cockroach to /usr/bin,
     # Let's set up an alias. This avoids needing to escalation permissions.
     alias cockroach="~/.data/cockroach"
     echo 'alias cockroach="~/.data/cockroach"' >> .bash_profile
-
-    # basic check for if the above lines worked out OK
-    cockroach version
 else
     echo "CockroachDB is already installed"
 fi

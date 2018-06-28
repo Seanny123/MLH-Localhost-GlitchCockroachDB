@@ -23,15 +23,20 @@ If the app is really unresponsive, you may also go into the Glitch Console and t
 ### App is still not responding and `EADDRINUSE :::3000` appears in the Glitch Log
 
 You have no choice but to kill the server.js process in the Glitch Console.
-![error]("https://i.imgur.com/nzQsauv.png")
+![error](https://i.imgur.com/nzQsauv.png)
 
 * Go to the Glitch Console
 * Type `ps -ax` to see a list of all running processes.
 * Find the process `node server.js` and note the PID.
-* Finally, kill that process by running `kill [PID]` 
-![kill]("https://i.imgur.com/0u8U6qS.png")
+* Finally, kill that process by running `kill [PID]`
+
+![kill](https://i.imgur.com/0u8U6qS.png)
   
 Don't worry about restarting the node server.js as Glitch will do this automatically. You may return to your project on Glitch IDE and check the log to ensure you have no issues.
+
+### See CockraochDB information instead of the app
+
+If someone sees information about `cockroachdb` instead of the quotes interface, they probably started the database incorrectly somehow. Quit the database using `cockroach quit --insecure --port=26257` (or whatever port number is required) and start it again.
 
 ### Running out of space
 
